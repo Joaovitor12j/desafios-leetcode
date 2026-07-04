@@ -4,6 +4,10 @@ Arquivo pessoal de desafios do LeetCode já resolvidos, com soluções em PHP e 
 
 Cada problema resolvido vive em sua própria pasta dentro de `PHP/` ou `SQL/` (ex.: `PHP/171-excel-sheet-column-number/`), contendo o enunciado em português (`README.md`), a solução (`solution.php` ou `solution.sql`) e os testes (`SolutionTest.php`).
 
+## Abordagem
+
+A seção 'Abordagem' dentro de cada problema descreve a abordagem que eu tomei para resolver o problema.
+
 ## Rodando os testes com Docker (recomendado)
 
 Pré-requisitos: Docker e Docker Compose v2 (comando `docker compose`, sem hífen).
