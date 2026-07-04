@@ -2,9 +2,11 @@
 
 declare(strict_types=1);
 
-final class Solution {
+final class Solution171
+{
 
-    public function titleToNumber(string $columnTitle): int {
+    public function titleToNumber(string $columnTitle): int
+    {
 
         $result = 0;
         for ($i = 0; $i < strlen($columnTitle); $i++) {
