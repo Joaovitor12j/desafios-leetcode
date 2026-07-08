@@ -39,6 +39,11 @@ Saída:
 
 Explicação: Em 2015-01-02, a temperatura era mais alta que no dia anterior (2015-01-01): 25 > 10. Em 2015-01-04, a temperatura era mais alta que no dia anterior (2015-01-03): 30 > 20.
 
+Restrições:
+
+* `id` é uma coluna com valores únicos.
+* Não há duas linhas com a mesma `recordDate`.
+
 #### Abordagem
 
 Como não existe função de data nativa comum a ambos os engines, essa solução fuciona apenas no sqlite, para o MySQL usaria "DATE_ADD(w2.recordDate, INTERVAL 1 DAY)".

@@ -45,6 +45,10 @@ Saída:
 
 Explicação: Afghanistan atende ao critério de população (25500100 >= 25000000). Algeria atende ao critério de população (37100000 >= 25000000). Albania não atende a nenhum dos dois critérios.
 
+Restrições:
+
+* `name` é uma coluna com valores únicos.
+
 #### Abordagem
 
 Filtra-se `World` com `WHERE area >= 3000000 OR population >= 25000000`, selecionando apenas `name`, `population` e `area`, conforme o critério de "país grande" descrito no enunciado.

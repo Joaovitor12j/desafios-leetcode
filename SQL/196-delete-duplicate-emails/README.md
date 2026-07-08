@@ -37,6 +37,10 @@ Saída:
 
 Explicação: `john@example.com` estava duplicado nos ids 1 e 3. Mantém-se apenas o menor id (1) e remove-se o id 3.
 
+Restrições:
+
+* `id` é uma coluna com valores únicos.
+
 #### Abordagem
 
 Diferente dos demais desafios de SQL, esta consulta é um `DELETE`, não um `SELECT`: ela altera a tabela em vez de apenas relatar linhas. A estratégia é calcular, para cada `email`, o menor `id` (com `GROUP BY email` + `MIN(id)`) e excluir toda linha cujo `id` não esteja nesse conjunto de menores ids — ou seja, remover qualquer linha "extra" que não seja a primeira ocorrência de cada e-mail.

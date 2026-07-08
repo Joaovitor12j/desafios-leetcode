@@ -42,6 +42,10 @@ Saída:
 
 Explicação: A data mais antiga de login do jogador 1 é 2016-03-01, do jogador 2 é 2017-06-25 e do jogador 3 é 2016-03-02.
 
+Restrições:
+
+* `(player_id, event_date)` é a combinação de colunas com valores únicos desta tabela.
+
 #### Abordagem
 
 Agrupa-se a tabela `Activity` por `player_id` e aplica-se `MIN(event_date)` para obter a data de login mais antiga de cada jogador, renomeando a coluna resultante para `first_login`.

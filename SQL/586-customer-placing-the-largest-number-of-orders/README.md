@@ -37,6 +37,11 @@ Saída:
 
 Explicação: O cliente com o número `3` tem duas contas, número de pedido `3` e número de pedido `4`. Este é o cliente com mais pedidos.
 
+Restrições:
+
+* `order_number` é uma coluna com valores únicos.
+* Os dados de teste são gerados de forma que exatamente um cliente tenha feito mais pedidos do que qualquer outro cliente.
+
 #### Abordagem
 
 Agrupa-se `Orders` por `customer_number`, conta-se as linhas de cada grupo com `COUNT(*)`, ordena-se decrescentemente por essa contagem e retorna-se apenas a primeira linha com `ORDER BY ... DESC LIMIT 1`. Como o enunciado garante que existe exatamente um cliente com o maior número de pedidos, não há ambiguidade de empate a resolver.

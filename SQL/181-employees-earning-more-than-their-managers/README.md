@@ -39,6 +39,11 @@ Saída:
 
 Explicação: Joe é o único funcionário que ganha mais que seu gerente (Sam). Henry ganha menos que seu gerente (Max).
 
+Restrições:
+
+* `id` é uma coluna com valores únicos.
+* `managerId` é `null` ou o `id` de alguma pessoa presente nesta mesma tabela.
+
 #### Abordagem
 
 Faz-se um self-join da tabela `Employee` consigo mesma, ligando `managerId` do funcionário ao `id` do gerente. Um `INNER JOIN` já descarta automaticamente funcionários sem gerente (`managerId IS NULL`), já que não há correspondência para eles. Basta então filtrar as linhas em que o salário do funcionário é maior que o salário do gerente encontrado.

@@ -43,6 +43,10 @@ Saída:
 
 Explicação: Alex e Mark foram indicados pelo cliente de id `2`, então são excluídos. Os demais clientes (indicados por outra pessoa ou sem indicação) aparecem no resultado.
 
+Restrições:
+
+* `id` é uma coluna com valores únicos.
+
 #### Abordagem
 
 Filtra-se `Customer` com `WHERE referee_id != 2 OR referee_id IS NULL`. A condição `IS NULL` é necessária porque, em SQL, qualquer comparação com `null` (incluindo `referee_id != 2`) resulta em `null`, não em verdadeiro — então clientes sem indicador seriam descartados incorretamente se dependêssemos apenas do `!=`.
