@@ -13,7 +13,7 @@ A seção 'Abordagem' dentro de cada problema descreve a abordagem que eu tomei 
 Pré-requisitos: Docker e Docker Compose v2 (comando `docker compose`, sem hífen).
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/Joaovitor12j/desafios-leetcode
 cd desafios-leetcode
 
 make build     # constrói a imagem (PHP + extensões + Composer)
