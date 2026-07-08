@@ -54,3 +54,13 @@ Saída:
 | Bob       | Alice    | New York City | New York |
 
 Explicação: Não existe endereço cadastrado para o `personId` 1, então cidade e estado aparecem como `null` para Allen Wang.
+
+Restrições:
+
+* `personId` é uma coluna com valores únicos na tabela `Person`.
+* `addressId` é uma coluna com valores únicos na tabela `Address`.
+* `personId` na tabela `Address` é uma chave estrangeira (referência) para `personId` da tabela `Person`.
+
+#### Abordagem
+
+Usa-se `LEFT JOIN` de `Person` com `Address` (ligando por `personId`) para preservar toda pessoa mesmo sem endereço cadastrado — nesse caso `city` e `state` ficam `null` naturalmente após o join, exatamente o comportamento exigido pelo enunciado.

@@ -54,6 +54,12 @@ Saída:
 
 Explicação: Henry e Max nunca fizeram um pedido, apenas Joe (id 1) e Sam (id 3) aparecem em `Orders`.
 
+Restrições:
+
+* `id` é uma coluna com valores únicos na tabela `Customers`.
+* `id` é uma coluna com valores únicos na tabela `Orders`.
+* `customerId` na tabela `Orders` é uma chave estrangeira (referência) para `id` da tabela `Customers`.
+
 #### Abordagem
 
 Usa-se `LEFT JOIN` de `Customers` com `Orders` e filtra-se pelas linhas em que `customerId` ficou `null`, isto é, clientes sem nenhum pedido correspondente. Uma alternativa equivalente seria `WHERE id NOT IN (SELECT customerId FROM Orders)`, mas o `LEFT JOIN ... WHERE ... IS NULL` evita armadilhas com `NOT IN` quando a subconsulta pode conter `null`.

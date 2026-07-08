@@ -8,6 +8,40 @@ Cada problema resolvido vive em sua própria pasta dentro de `PHP/` ou `SQL/` (e
 
 A seção 'Abordagem' dentro de cada problema descreve a abordagem que eu tomei para resolver o problema.
 
+## Problemas resolvidos
+
+### PHP
+
+| # | Problema | Dificuldade |
+|---|----------|--------------|
+| 171 | [Excel Sheet Column Number](PHP/171-excel-sheet-column-number/) | Fácil |
+| 203 | [Remover Elementos de uma Lista Encadeada](PHP/203-remover-elementos-da-lista-vinculada/) | Fácil |
+| 205 | [Cordas Isomórficas](PHP/205-isomorphic-strings/) | Fácil |
+| 217 | [Contém Duplicata](PHP/217-contains-duplicate/) | Fácil |
+| 219 | [Contém Duplicata II](PHP/219-contains-duplicate-ii/) | Fácil |
+| 222 | [Contar Nós de uma Árvore Completa](PHP/222-count-complete-tree-nodes/) | Médio |
+| 232 | [Implementar Fila Usando Pilhas](PHP/232-implement-queue-using-stacks/) | Fácil |
+| 258 | [Somar Dígitos](PHP/258-add-digits/) | Fácil |
+| 283 | [Mover Zeros](PHP/283-move-zeroes/) | Fácil |
+| 303 | [Consulta de Soma de Intervalo - Imutável](PHP/303-range-sum-query-immutable/) | Fácil |
+
+### SQL
+
+| # | Problema | Dificuldade |
+|---|----------|--------------|
+| 175 | [Combine Two Tables](SQL/175-combine-two-tables/) | Fácil |
+| 181 | [Employees Earning More Than Their Managers](SQL/181-employees-earning-more-than-their-managers/) | Fácil |
+| 182 | [Duplicate Emails](SQL/182-duplicate-emails/) | Fácil |
+| 183 | [Customers Who Never Order](SQL/183-customers-who-never-order/) | Fácil |
+| 196 | [Delete Duplicate Emails](SQL/196-delete-duplicate-emails/) | Fácil |
+| 197 | [Rising Temperature](SQL/197-rising-temperature/) | Fácil |
+| 511 | [Game Play Analysis I](SQL/511-game-play-analysis-i/) | Fácil |
+| 577 | [Employee Bonus](SQL/577-employee-bonus/) | Fácil |
+| 584 | [Find Customer Referee](SQL/584-find-customer-referee/) | Fácil |
+| 586 | [Customer Placing the Largest Number of Orders](SQL/586-customer-placing-the-largest-number-of-orders/) | Fácil |
+| 595 | [Big Countries](SQL/595-big-countries/) | Fácil |
+| 596 | [Classes With at Least 5 Students](SQL/596-classes-with-at-least-5-students/) | Fácil |
+
 ## Rodando os testes com Docker (recomendado)
 
 Pré-requisitos: Docker e Docker Compose v2 (comando `docker compose`, sem hífen).

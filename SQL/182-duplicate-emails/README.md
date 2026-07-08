@@ -36,6 +36,10 @@ Saída:
 
 Explicação: `john@example.com` aparece duas vezes.
 
+Restrições:
+
+* `id` é uma coluna com valores únicos.
+
 #### Abordagem
 
 Agrupa-se por `email` com `GROUP BY` e filtra-se com `HAVING COUNT(*) > 1`, que retorna apenas os e-mails que aparecem mais de uma vez. Como `GROUP BY` já agrupa valores `null` entre si, e um único `null` isolado nunca teria contagem maior que 1, o filtro funciona corretamente mesmo com e-mails nulos na tabela.

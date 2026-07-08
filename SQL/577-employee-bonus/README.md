@@ -57,6 +57,12 @@ Saída:
 
 Explicação: Brad e John não possuem registro em `Bonus`, então seu bônus é tratado como `null` (que é menor que `1000`). Dan tem bônus `500`, que é menor que `1000`. Thad tem bônus `2000`, então é excluído do resultado.
 
+Restrições:
+
+* `empId` é uma coluna com valores únicos na tabela `Employee`.
+* `empId` é uma coluna com valores únicos na tabela `Bonus`.
+* `empId` na tabela `Bonus` é uma chave estrangeira (referência) para `empId` da tabela `Employee`.
+
 #### Abordagem
 
 Usa-se `LEFT JOIN` de `Employee` com `Bonus` para preservar funcionários sem registro de bônus (cujo `bonus` aparece como `null` após o join). O filtro `WHERE bonus < 1000 OR bonus IS NULL` mantém tanto os funcionários com bônus baixo quanto os sem bônus algum — o `IS NULL` é necessário porque, em SQL, `null < 1000` nunca é avaliado como verdadeiro.
