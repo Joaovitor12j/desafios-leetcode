@@ -1,0 +1,12 @@
+#!/bin/sh
+# Roda a suite de testes antes de qualquer push. Bloqueia o push se falhar.
+
+echo "Rodando testes antes do push..."
+composer test
+
+if [ $? -ne 0 ]; then
+    echo "Testes falharam. Push abortado."
+    exit 1
+fi
+
+exit 0

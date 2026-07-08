@@ -12,7 +12,9 @@
         }
     },
     "scripts": {
-        "test": "phpunit"
+        "test": "phpunit",
+        "post-install-cmd": "git config core.hooksPath .githooks",
+        "post-update-cmd": "git config core.hooksPath .githooks"
     },
     "config": {
         "sort-packages": true
